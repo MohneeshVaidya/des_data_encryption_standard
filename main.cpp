@@ -31,6 +31,9 @@ int main() {
     txt = txt_preprocess(txt);
     key = txt_preprocess(key);
 
+    std::cout << "The text: " << txt << "\n\n";
+    std::cout << "The key : " << key << "\n\n";
+
     Bits txt_bits{ txt_to_bits(txt) };
     Bits key_bits{ txt_to_bits(key) };
 
@@ -51,7 +54,7 @@ int main() {
         i += 64;
     }
 
-    std::cout << "encrypted text = " << encrypted << '\n';
+    std::cout << "The encrypted text: " << encrypted << "\n\n";
 
     Bits encrypted_bits{ txt_to_bits(encrypted) };
 
@@ -72,7 +75,7 @@ int main() {
         i += 64;
     }
 
-    std::cout << "decrypted text = " << decrypted << '\n';
+    std::cout << "The decrypted text: " << decrypted << '\n';
 
     return 0;
 }
