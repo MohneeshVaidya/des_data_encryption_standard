@@ -25,7 +25,7 @@ std::string encrypt(const Bits& txt_bits, const std::vector<Bits>& round_keys) {
 }
 
 int main() {
-    std::string txt{ "1234567890abcdedAbcde!@#$%^&*()_+=-{}[];:'<>/?" };
+    std::string txt{ "Hello World how are you? abcd EFG 1234 *&^%$" };
     std::string key{ "1234AbcD" };
 
     txt = txt_preprocess(txt);
